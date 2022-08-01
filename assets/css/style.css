@@ -1,4 +1,4 @@
-/* Variables */
+/* --------------------------- Variables ---------------------------  */
 :root {
     --primary-color: #0A1128;
     --secondary-color: crimson;
@@ -6,10 +6,10 @@
     --light-gray-color: #EEEEEE;
     --gap: 3rem;
 }
-/* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------ */
 
 
-/* Elements and Resources */
+/* --------------------- Elements and Resources --------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -61,9 +61,9 @@ font-family: 'Open Sans', sans-serif;
  a {
    text-decoration: none;
  }
-/* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------ */
 
- /* Styles */
+/* ----------------------------- Styles ----------------------------- */
  .main-bg {
     background-image: url('../img/main-bg.svg');
     background-size: cover;
@@ -84,10 +84,14 @@ font-family: 'Open Sans', sans-serif;
  .section {
     min-height: 100vh;
  }
- /* ---------------------------------------------------------------------------- */
+
+ .menu-spacing {
+   height: 6.5rem;
+ }
+/* ------------------------------------------------------------------ */
 
  
- /* Menu */
+/* ------------------------------ Menu ------------------------------ */
  .menu {
    position: fixed;
    top: 0;
@@ -144,6 +148,29 @@ font-family: 'Open Sans', sans-serif;
    width: 50%;
    left: 25%;
  }
- /* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------ */
+
+
+.intro-content {
+   position: relative;
+   top: -7rem;
+   display: grid;
+   grid-template-columns: 1fr 1.5fr;
+   gap: var(--gap);
+   height: 100vh;
+}
+
+.intro-text-content {
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+}
+
+.intro-text-content h2 {
+   font-size: 4.5rem;
+   margin-bottom: 5rem;
+   text-transform: uppercase;
+}
+
 
  
