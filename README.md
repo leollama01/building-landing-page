@@ -7,5 +7,8 @@
 
 ### Recursos
 
-* [Background SVG](https://www.svgbackgrounds.com)
-* [HTML validator](https://validator.w3.org/nu/#textarea)
+* [Background SVG](https://www.svgbackgrounds.com)  
+* [HTML validator](https://validator.w3.org/nu/#textarea)  
+* [a11y](https://www.a11yproject.com)  
+* [unDraw](https://undraw.co/)  
+* [SVGOMG](https://jakearchibald.github.io/svgomg/)  
