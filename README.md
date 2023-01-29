@@ -3,6 +3,8 @@
 #### Estudo de HTML e CSS realizado seguindo as aulas do instrutor Luiz Otávio.
 #### Perfil do github: [Luiz Otávio](https://github.com/luizomf)
 
+#### Para visualizar a Landing Page [clique aqui](https://my-landingpag-to-portf.netlify.app).  
+
 <hr>  
 
 ### Recursos
@@ -14,7 +16,3 @@
 * [SVGOMG](https://jakearchibald.github.io/svgomg/)  
 * [unsplash](https://unsplash.com/)  
 * [random-image-unsplash-sizeXsize](https://source.unsplash.com/random/800x800)  
-
-### Netlify link  
-
-* [Landing Page](https://my-landingpag-to-portf.netlify.app)
