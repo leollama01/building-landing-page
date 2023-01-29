@@ -1,9 +1,11 @@
+<base target="_blank">
+
 ## Landing Page - Seção de HTML e CSS
 
 #### Estudo de HTML e CSS realizado seguindo as aulas do instrutor Luiz Otávio.
 #### Perfil do github: [Luiz Otávio](https://github.com/luizomf)
 
-#### Para visualizar a Landing Page ![clique aqui](https://my-landingpag-to-portf.netlify.app).  
+#### Para visualizar a Landing Page [clique aqui](https://my-landingpag-to-portf.netlify.app).  
 
 <hr>  
 
