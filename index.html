@@ -56,45 +56,68 @@
 
     <section id="intro" class="white-bg section">
         <div class="main-content top3-content">
-            <h2>news coverage and some surprises</h2>
-            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and
-                some surprises at the machine’s performance. This post details some background information on the
-                experience of porting Firefox to run natively on these CPUs.</p>
-            <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that
-                needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
-            <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur,
-                and discuss various updater problems we had to deal with. We’ll conclude with the release and an
-                overview of various other improvements that are in the pipeline.</p>
+            <h2>Performance API - Concepts and usage</h2>
+            <p>
+                To ensure web applications are fast, it's important to measure and analyze various performance metrics.
+                The Performance API provides important built-in metrics and the ability to add you own measurements to
+                the browser's performance timeline. The performance timeline contains high precision timestamps and can
+                be displayed in developer tools. You can also send its data to analytics end points to record
+                performance metrics over time.
+            </p>
+            <p>
+                Each performance metric is represented by a single PerformanceEntry. A performance entry has a name, a
+                duration, a startTime, and a type. All performance metrics extend the PerformanceEntry interface and
+                qualify it further.
+            </p>
+            <p>
+                Most of the performance entries are recorded for you without you having to do anything, and are then
+                accessible either through Performance.getEntries() or (preferably) through PerformanceObserver. For
+                example, PerformanceEventTiming entries are recorded for events that take longer than a set threshold.
+                But the Performance API also enables you to define and record your own custom events, using the
+                PerformanceMark and PerformanceMeasure interfaces.
+            </p>
         </div>
     </section>
 
     <section id="grid-one" class="grid-one main-bg section">
         <div class="main-content grid-one-content">
-            <h2 class="grid-main-heading">My Grid</h2>
-            <p class="grid-description">Uma breve descrição</p>
+            <h2 class="grid-main-heading">Performance API</h2>
+            <p class="grid-description">Concepts and usage</p>
             <div class="grid">
                 <article>
-                    <h3>Teste1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet non facere tempora fuga,
-                        reiciendis cum voluptates, nesciunt nulla earum quod nihil dolore fugiat saepe suscipit eaque
-                        placeat
-                        minima! Dolor?
+                    <h3>Title</h3>
+                    <p>
+                        To ensure web applications are fast, it's important to measure and analyze various performance
+                        metrics.
+                        The Performance API provides important built-in metrics and the ability to add you own
+                        measurements to
+                        the browser's performance timeline. The performance timeline contains high precision timestamps
+                        and can
+                        be displayed in developer tools. You can also send its data to analytics end points to record
+                        performance metrics over time.
                     </p>
                 </article>
                 <article>
-                    <h3>Teste2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet non facere tempora fuga,
-                        reiciendis cum voluptates, nesciunt nulla earum quod nihil dolore fugiat saepe suscipit eaque
-                        placeat
-                        minima! Dolor?
+                    <h3>Title</h3>
+                    <p>
+                        Each performance metric is represented by a single PerformanceEntry. A performance entry has a
+                        name, a
+                        duration, a startTime, and a type. All performance metrics extend the PerformanceEntry interface
+                        and
+                        qualify it further.
                     </p>
                 </article>
                 <article>
-                    <h3>Teste3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet non facere tempora fuga,
-                        reiciendis cum voluptates, nesciunt nulla earum quod nihil dolore fugiat saepe suscipit eaque
-                        placeat
-                        minima! Dolor?
+                    <h3>Title</h3>
+                    <p>
+                        Most of the performance entries are recorded for you without you having to do anything, and are
+                        then
+                        accessible either through Performance.getEntries() or (preferably) through PerformanceObserver.
+                        For
+                        example, PerformanceEventTiming entries are recorded for events that take longer than a set
+                        threshold.
+                        But the Performance API also enables you to define and record your own custom events, using the
+                        PerformanceMark and PerformanceMeasure interfaces.
                     </p>
                 </article>
             </div>
@@ -131,27 +154,30 @@
     <section id="grid-two" class="grid-one main-bg section">
         <div class="main-content grid-one-content">
             <h2 class="grid-main-heading">My Grid</h2>
-            <p class="grid-description">Uma breve descrição</p>
+            <p class="grid-description">Little description here</p>
             <div class="grid">
                 <article>
-                    <h3>Teste1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet non facere tempora fuga,
+                    <h3>Title</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet non facere tempora fuga,
                         reiciendis cum voluptates, nesciunt nulla earum quod nihil dolore fugiat saepe suscipit eaque
                         placeat
                         minima! Dolor?
                     </p>
                 </article>
                 <article>
-                    <h3>Teste2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet non facere tempora fuga,
+                    <h3>Title</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet non facere tempora fuga,
                         reiciendis cum voluptates, nesciunt nulla earum quod nihil dolore fugiat saepe suscipit eaque
                         placeat
                         minima! Dolor?
                     </p>
                 </article>
                 <article>
-                    <h3>Teste3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet non facere tempora fuga,
+                    <h3>Title</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet non facere tempora fuga,
                         reiciendis cum voluptates, nesciunt nulla earum quod nihil dolore fugiat saepe suscipit eaque
                         placeat
                         minima! Dolor?
@@ -164,9 +190,9 @@
     <section id="pricing" class="white-bg section">
         <div class="main-content top3-content">
             <h2>Pricing</h2>
-            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and
-                some surprises at the machine’s performance. This post details some background information on the
-                experience of porting Firefox to run natively on these CPUs.
+            <p>
+                The main Performance interface is available for each global using self.performance and enables you to
+                add custom performance entries, to clear performance entries, and to retrieve performance entries.
             </p>
             <div class="responsive-table">
                 <table>
@@ -228,16 +254,10 @@
     <section id="contact" class="intro main-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
-                <h2>MDN Plus now available in more regions</h2>
+                <h2>Performance Resource Timing</h2>
                 <p>
-                    At the end of March this year, we announced MDN Plus, a new premium service on MDN that allows users
-                    to
-                    customize their experience on the website.
-
-                    We are very glad to announce today that it is now possible for MDN users around the globe to create
-                    an
-                    MDN
-                    Plus free account, no matter where they are.
+                    Measures network loading metrics such as redirect start and end times, fetch start, DNS lookup start
+                    and end times, response start and end times for resources such as images, scripts, fetch calls, etc.
                 </p>
             </div>
             <div class="intro-img">
