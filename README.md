@@ -14,3 +14,7 @@
 * [SVGOMG](https://jakearchibald.github.io/svgomg/)  
 * [unsplash](https://unsplash.com/)  
 * [random-image-unsplash-sizeXsize](https://source.unsplash.com/random/800x800)  
+
+### Netlify link  
+
+* [Landing Page](https://my-landingpag-to-portf.netlify.app)
