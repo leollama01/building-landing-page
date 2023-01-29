@@ -4,6 +4,7 @@
     --secondary-color: crimson;
     --white-color: #FFFFFF;
     --light-gray-color: #EEEEEE;
+    --placeholder-color: #d1d1d1;
     --gap: 3rem;
 }
 /* ------------------------------------------------------------------ */
@@ -13,6 +14,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -72,6 +74,31 @@ p {
     margin-bottom: 3rem;
 }
 
+table {
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th {
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color);
+}
+
+tfoot td, table th {
+    background-color: var(--light-gray-color);
+}
+
+
 /* ------------------------------------------------------------------ */
 
 /* ----------------------------- Styles ----------------------------- */
@@ -99,6 +126,11 @@ p {
 
 .menu-spacing {
     height: 6.5rem;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
 }
 /* ------------------------------------------------------------------ */
 
@@ -166,7 +198,7 @@ p {
 
 .intro-content {
     position: relative;
-    top: -7rem;
+    /* top: -7rem; */
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -247,4 +279,88 @@ p {
 .gallery-img img:hover {
     /* transform: translate(-3%, 3%) scale(1.2) rotate(5deg); */
     transform: translate(3%, -3%);
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.form-group {
+    flex: 1 1 32rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+    outline: none;
+    border-radius: 1rem;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    box-shadow: 0 0 1rem 0.1rem var(--secondary-color);
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    border-radius: 1rem;
+}
+
+.form-group button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder {
+    color: var(--placeholder-color);
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.footer a {
+    color: var(--primary-color);
+}
+
+.footer p {
+    margin: 0;
+    padding: 3rem;
+}
+
+.heart {
+    color: var(--secondary-color);
 }
